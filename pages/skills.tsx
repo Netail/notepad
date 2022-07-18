@@ -11,9 +11,7 @@ const Skills: NextPage = () => {
             <Head>
                 <title>{touched ? '*' : ''}Skills | Maikel van Dort</title>
             </Head>
-            <TextArea onChange={() => setTouched(true)}>
-                Skills...
-            </TextArea>
+            <TextArea onChange={() => setTouched(true)} defaultValue='Skills...' />
         </>
     );
 }

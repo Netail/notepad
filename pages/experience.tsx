@@ -11,9 +11,7 @@ const Experience: NextPage = () => {
             <Head>
                 <title>{touched ? '*' : ''}Experience | Maikel van Dort</title>
             </Head>
-            <TextArea onChange={() => setTouched(true)}>
-                Experience...
-            </TextArea>
+            <TextArea onChange={() => setTouched(true)} defaultValue='Experience...' />
         </>
     );
 }

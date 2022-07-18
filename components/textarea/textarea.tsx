@@ -1,18 +1,14 @@
-import { ChangeEvent, FC, ReactNode } from 'react';
+import { ChangeEvent, FC } from 'react';
 
 import css from './textarea.module.scss';
 
 interface TextAreaProps {
-    children?: ReactNode;
+    defaultValue?: string;
     onChange?: (this: Window, ev: ChangeEvent<HTMLTextAreaElement>) => any;
 }
 
-const TextArea: FC<TextAreaProps> = ({ children, onChange }) => {
-    return (
-        <textarea className={css.textarea} onChange={onChange}>
-            { children }
-        </textarea>
-    );
+const TextArea: FC<TextAreaProps> = ({ defaultValue, onChange }) => {
+    return <textarea className={css.textarea} defaultValue={defaultValue} onChange={onChange} />;
 }
 
 export default TextArea;

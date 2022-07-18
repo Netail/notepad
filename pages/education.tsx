@@ -11,9 +11,7 @@ const Education: NextPage = () => {
             <Head>
                 <title>{touched ? '*' : ''}Education | Maikel van Dort</title>
             </Head>
-            <TextArea onChange={() => setTouched(true)}>
-                Education...
-            </TextArea>
+            <TextArea onChange={() => setTouched(true)} defaultValue='Education...' />
         </>
     );
 }
