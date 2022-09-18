@@ -2,6 +2,7 @@
 
 .footer {
     display: flex;
+    flex-wrap: wrap;
     background: $background2;
     border-top: 1px solid $background3;
     justify-content: right;

@@ -17,7 +17,7 @@ const Footer: FC = () => {
             <FooterItem label='Ln 1, Col 1' />
             <FooterItem label={`${zoomLevel}%`} />
             <FooterItem label={`${platform} (CLRF)`} />
-            <FooterItem label='URF-8' />
+            <FooterItem label='UTF-8' />
         </div>
     );
 }
