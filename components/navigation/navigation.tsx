@@ -5,13 +5,13 @@ import css from './navigation.module.scss';
 
 const Navigation: FC = () => {
     return (
-        <div className={css.navigation}>
-            <NavigationItem href='/' label='Home' />
-            <NavigationItem href='/about' label='About' />
-            <NavigationItem href='/experience' label='Experience' />
-            <NavigationItem href='/education' label='Education' />
-            <NavigationItem href='/skills' label='Skills' />
-        </div>
+        <nav className={css.navigation}>
+            <NavigationItem label='File' />
+            <NavigationItem label='Edit' />
+            <NavigationItem label='Format' />
+            <NavigationItem label='View' />
+            <NavigationItem label='Help' />
+        </nav>
     );
 }
 

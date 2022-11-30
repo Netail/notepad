@@ -1,24 +1,17 @@
 @import '../../styles/variables';
 
-@mixin active {
-    background: $selected-background;
-    border: 1px solid $selected-border;
-}
-
 .item {
     padding: 0.25rem 0.5rem;
-    border: 1px solid $background;
+    border: 1px solid $background-primary;
+    cursor: pointer;
 
     &:hover {
-        background: $hover-background;
-        border: 1px solid $hover-border;
+        background: $background-hover;
+        border: 1px solid $border-hover;
     }
 
     &:active {
-        @include active;
+        background: $background-active;
+        border: 1px solid $border-active;
     }
-}
-
-.active {
-    @include active;
 }

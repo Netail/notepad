@@ -2,6 +2,10 @@ import type { NextPage } from 'next';
 import TextArea from '../components/textarea/textarea';
 import Head from 'next/head';
 import { useState } from 'react';
+import Navigation from '../components/navigation/navigation';
+import Footer from '../components/footer/footer';
+
+import css from '../styles/index.module.scss';
 
 const Home: NextPage = () => {
     const [touched, setTouched] = useState(false);
@@ -9,9 +13,15 @@ const Home: NextPage = () => {
     return (
         <>
             <Head>
-                <title>{touched ? '*' : ''}Home | Maikel van Dort</title>
+                <title>{touched ? '*' : ''}Untitled - Notepad</title>
+                <link rel='shortcut icon' href='/favicon.ico' />
             </Head>
-            <TextArea onChange={() => setTouched(true)} defaultValue="Hi I'm Maikel van Dort" />
+            <main className={css.layout}>
+                <Navigation />
+                <TextArea onChange={() => setTouched(true)} defaultValue='Hello world!' />
+                <Footer />
+            </main>
+
         </>
     );
 }

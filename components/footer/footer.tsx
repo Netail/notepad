@@ -13,12 +13,12 @@ const Footer: FC = () => {
     }, []);
 
     return (
-        <div className={css.footer}>
+        <footer className={css.footer}>
             <FooterItem label='Ln 1, Col 1' />
             <FooterItem label={`${zoomLevel}%`} />
             <FooterItem label={`${platform} (CLRF)`} />
             <FooterItem label='UTF-8' />
-        </div>
+        </footer>
     );
 }
 
