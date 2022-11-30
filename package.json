@@ -1,7 +1,7 @@
 {
-    "name": "netail.github.io",
+    "name": "notepad",
     "version": "1.0.0",
-    "description": "My portfolio",
+    "description": "Windows Notepad clone",
     "scripts": {
         "dev": "next dev",
         "build": "next build",
